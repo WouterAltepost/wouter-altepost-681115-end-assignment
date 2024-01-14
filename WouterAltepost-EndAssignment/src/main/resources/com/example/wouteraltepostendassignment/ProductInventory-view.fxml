@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="401.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wouteraltepostendassignment.controller.ProductInventoryController">
+
+    <padding>
+        <Insets left="20.0" right="20.0" top="20.0" />
+    </padding>
+
+    <Label styleClass="bold-large-label" text="Product inventory" />
+
+    <TableView fx:id="productTable" onMouseClicked="#handleMouseAction" prefHeight="250">
+        <columns>
+            <TableColumn text="Stock">
+                <cellValueFactory>
+                    <PropertyValueFactory property="stock" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="productName" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Category">
+                <cellValueFactory>
+                    <PropertyValueFactory property="category" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="price" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Description">
+                <cellValueFactory>
+                    <PropertyValueFactory property="description" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <HBox prefHeight="43.0" prefWidth="560.0" spacing="10">
+        <padding>
+            <Insets bottom="5" top="5" />
+        </padding>
+        <TextField fx:id="stock" promptText="        Stock" />
+        <TextField fx:id="productName" promptText="        Name" />
+        <TextField fx:id="category" promptText="      Category" />
+        <TextField fx:id="price" promptText="         Price" />
+        <TextField fx:id="description" promptText="    Description" />
+    </HBox>
+
+    <HBox prefHeight="0.0" prefWidth="438.0" spacing="10">
+        <padding>
+            <Insets bottom="5" top="5" />
+        </padding>
+        <Button fx:id="addProductBtn" onAction="#addProductBtn" prefHeight="25.0" prefWidth="383.0" text="Add Product" />
+        <Button fx:id="editProductBtn" onAction="#editProductBtn" prefHeight="25.0" prefWidth="398.0" text="Edit Product" />
+        <Button fx:id="deleteProductBtn" onAction="#deleteProductBtn" prefHeight="25.0" prefWidth="370.0" text="Delete Product" />
+    </HBox>
+</VBox>

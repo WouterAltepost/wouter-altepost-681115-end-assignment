@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.wouteraltepostendassignment.controller.MainController"
+      prefHeight="536.0" prefWidth="857.0" spacing="10" style="-fx-background-color: #d9d9d9;">
+
+    <VBox prefHeight="536.0" prefWidth="181.0" spacing="10" style="-fx-padding: 20px; -fx-background-color: #88AB8E;">
+
+        <Button fx:id="dashboardButton" onAction="#goToDashboard" prefHeight="31.0" prefWidth="139.0"
+                style="-fx-background-color: #AFC8AD;" text="Dashboard" textFill="Black">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+
+        <Button fx:id="createOrderButton" onAction="#goToCreateOrder" prefHeight="31.0" prefWidth="139.0"
+                style="-fx-background-color: #AFC8AD;" text="Create Order" textFill="Black">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+
+        <Button fx:id="productInventoryButton" onAction="#goToProductInventory" prefHeight="31.0" prefWidth="139.0"
+                style="-fx-background-color: #AFC8AD;" text="Product Inventory" textFill="Black">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+
+        <Button fx:id="orderHistoryButton" onAction="#goToOrderHistory" prefHeight="31.0" prefWidth="139.0"
+                style="-fx-background-color: #AFC8AD;" text="Order History" textFill="Black">
+            <font>
+                <Font size="15.0"/>
+            </font>
+        </Button>
+
+        <Button fx:id="logOutButton" onAction="#goToLogOut" prefHeight="31.0" prefWidth="139.0"
+                style="-fx-background-color: #AFC8AD;" text="Log Out"
+                textFill="Black">
+            <font>
+                <Font size="15.0"/>
+            </font>
+            <translateY>300.0</translateY>
+        </Button>
+    </VBox>
+    <VBox fx:id="DisplayNew" prefHeight="400.0" prefWidth="660" spacing="10">
+    </VBox>
+</HBox>

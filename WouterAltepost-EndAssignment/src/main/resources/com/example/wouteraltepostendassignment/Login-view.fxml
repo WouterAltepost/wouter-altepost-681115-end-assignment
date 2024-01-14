@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="310.0" style="-fx-background-radius: 30;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wouteraltepostendassignment.controller.LoginController">
+  <center>
+    <AnchorPane prefHeight="400.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+      <children>
+        <Label layoutX="52.0" layoutY="65.0" prefHeight="23.0" prefWidth="215.0" text="Altepost Software Solutions" textFill="#282727">
+          <font>
+            <Font name="Toppan Bunkyu Midashi Gothic Extrabold" size="18.0" />
+          </font>
+        </Label>
+        <Label layoutX="28.0" layoutY="127.0" text="Username" textFill="#282727" />
+        <Label layoutX="28.0" layoutY="183.0" text="Password" textFill="#282727" />
+        <TextField fx:id="usernameField" layoutX="104.0" layoutY="123.0" promptText="Username" style="-fx-background-color: #e9e9eb;" />
+        <PasswordField fx:id="PasswordField" layoutX="104.0" layoutY="179.0" promptText="Password" style="-fx-background-color: #e9e9eb;" />
+        <Button fx:id="loginButton" layoutX="29.0" layoutY="250.0" mnemonicParsing="false" onAction="#onLoginBtnClick" prefHeight="26.0" prefWidth="249.0" style="-fx-background-color: #88AB8E;" text="Login" textFill="#2f302f">
+          <font>
+            <Font size="18.0" />
+          </font>
+        </Button>
+        <Label fx:id="LabelLoginMessage" contentDisplay="CENTER" layoutX="75.0" layoutY="30.0" prefHeight="17.0" prefWidth="185.0" textAlignment="CENTER" textFill="#e10707" />
+      </children>
+    </AnchorPane>
+  </center>
+</BorderPane>

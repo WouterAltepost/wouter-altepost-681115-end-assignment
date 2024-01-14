@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wouteraltepostendassignment.controller.OrderHistoryController">
+
+    <padding>
+        <Insets left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Label styleClass="bold-large-label" text="Order history">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+
+    <TableView fx:id="orderHistoryTable" prefHeight="250">
+        <columns>
+            <TableColumn text="Date/Time">
+                <cellValueFactory>
+                    <PropertyValueFactory property="formattedTimestamp" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="usernameColumn" text="Name">
+            </TableColumn>
+            <TableColumn fx:id="totalPriceColumn" text="Total Price">
+            </TableColumn>
+        </columns>
+    </TableView>
+
+    <Label styleClass="bold-large-label" text="Ordered products">
+      <font>
+         <Font size="20.0" />
+      </font></Label>
+
+    <TableView fx:id="productHistoryTable" prefHeight="250">
+        <columns>
+            <TableColumn text="Stock">
+                <cellValueFactory>
+                    <PropertyValueFactory property="quantity" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Name">
+                <cellValueFactory>
+                    <PropertyValueFactory property="productName" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="Category">
+                <cellValueFactory>
+                    <PropertyValueFactory property="category" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn  text="Price">
+                <cellValueFactory>
+                    <PropertyValueFactory property="totalPrice" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn  text="Description">
+                <cellValueFactory>
+                    <PropertyValueFactory property="description" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+    <padding>
+        <Insets left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <padding>
+        <Insets left="20.0" right="20.0" top="20.0" />
+    </padding>
+</VBox>

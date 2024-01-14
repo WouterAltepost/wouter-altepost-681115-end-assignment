@@ -1,0 +1,18 @@
+.bold-large-label {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+}
+
+.bold-mid-label {
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+}
+.bold-small-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+.red-button {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+}
